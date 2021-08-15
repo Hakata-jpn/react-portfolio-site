@@ -13,8 +13,12 @@ export default function Skills() {
                         <div className='rounded shadow flex-wrap justify-center p-6 m-4 md:-6 flex flex-col' key={index}>
                             <img src={item.urlName} key={index} />
                             <p key={index} className='font-bold'>{item.skillName}</p>
-                            <ul>
-                                <li key={index} className='font-italic'>{item.skillItems} <br /></li>
+                            <ul key={index} className='font-italic'>
+                                {skillItems.map((item, index) => {
+                                    return (
+                                        <li key={index}>{item.skillItems}</li>
+                                    )
+                                })}
                             </ul>
                         </div>
                     </Link>

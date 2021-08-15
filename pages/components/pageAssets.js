@@ -48,7 +48,7 @@ export const skillsData = [
     {
         iconImg: '#',
         skillName: 'UX Design',
-        skillItems: ['Wireframing', 'User Testing', 'User Flows'],
+        skillItems: ['Wireframing','User Testing', 'User Flows'],
     },
     {
         iconImg: '#',
