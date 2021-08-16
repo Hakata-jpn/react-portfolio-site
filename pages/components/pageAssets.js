@@ -52,17 +52,17 @@ export const skillsData = [
     },
     {
         iconImg: '#',
-        projectName: 'User Interface',
+        skillName: 'User Interface',
         skillItems: ['Prototyping', 'UI Kits'],
     },
     {
         iconImg: '#',
-        projectName: 'Web Dev',
+        skillName: 'Web Dev',
         skillItems: ['ReactJS', 'HTML/CSS', 'Git'],
     },
     {
         iconImg: '#',
-        projectName: 'Graphic Design',
+        skillName: 'Graphic Design',
         skillItems: ['Adobe Illustrator', 'Photoshop', 'After Effects', 'Blender'],
     },
 ]

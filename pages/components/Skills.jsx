@@ -7,6 +7,7 @@ export default function Skills() {
         <>
         <h2 className='font-bold text-2xl pb-4'>Skills</h2>
         <div className='flex flex-row flex-wrap mx-auto justify-center md:w-4/6'>
+            {/* Change to a ForEach maybe? */}
             {skillsData.map((item, index) => {
                 return (
                     <Link href='#'>
@@ -14,9 +15,9 @@ export default function Skills() {
                             <img src={item.urlName} key={index} />
                             <p key={index} className='font-bold'>{item.skillName}</p>
                             <ul key={index} className='font-italic'>
-                                {skillItems.map((item, index) => {
+                                {item.skillItems.map((skill, index) => {
                                     return (
-                                        <li key={index}>{item.skillItems}</li>
+                                        <li key={index}>{skill}</li>
                                     )
                                 })}
                             </ul>
